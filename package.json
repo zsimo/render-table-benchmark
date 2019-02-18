@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "app-root-path": "^2.1.0",
+    "css-loader": "^2.1.0",
+    "dotenv": "^6.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "lit-html": "^1.0.0",
+    "nanohtml": "^1.4.0",
+    "nanomorph": "^5.2.0",
+    "node-sass": "^4.11.0",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "scripts": {
+    "clear": "rimraf ./public/js/ ./public/index.html",
+    "predev": "npm run clear",
+    "dev": "webpack-dev-server",
+    "prebuild": "npm run clear",
+    "build": "webpack --env.build"
+  }
+}
