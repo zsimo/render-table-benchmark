@@ -33,6 +33,8 @@ module.exports = {
     },
     update: function (state) {
 
+        var start = Date.now();
+
         var newState = {};
         newState.data = state.data.map(function (datum) {
             return Object.keys(datum).map(function (key) {
@@ -40,13 +42,10 @@ module.exports = {
             });
         });
 
-        console.time("render html");
         var newTable = template(newState);
-        console.timeEnd("render html");
 
-        console.time("update dom");
         morph(table, newTable);
-        console.timeEnd("update dom");
+        console.log("time in ms: " + (Date.now() - start));
     }
 };
 

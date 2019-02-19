@@ -4,12 +4,13 @@ var template = require("./test.pug");
 
 
 function renderTable (state) {
-    console.time("render html");
+    var start = Date.now();
+
     var html = template(state);
-    console.timeEnd("render html");
-    console.time("update dom");
+
     document.querySelector(".main-content").innerHTML = html;
-    console.timeEnd("update dom");
+
+    console.log("time in ms: " + (Date.now() - start));
 }
 
 module.exports = {

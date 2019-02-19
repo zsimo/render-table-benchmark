@@ -16,13 +16,12 @@ module.exports = {
         document.body.appendChild(table);
     },
     update: function (state) {
-        console.time("render html");
+        var start = Date.now();
+
         var newTable = html`${raw(template(state))}`;
         newTable = newTable[0];
-
-        console.timeEnd("render html");
-        console.time("update dom");
         morph(table, newTable);
-        console.timeEnd("update dom");
+
+        console.log("time in ms: " + (Date.now() - start));
     }
 };

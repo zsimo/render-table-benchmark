@@ -19,6 +19,8 @@ var template = function (state) {
 
 
 function renderTable (state) {
+    var start = Date.now();
+
     var newState = {};
     newState.data = state.data.map(function (datum) {
         return Object.keys(datum).map(function (key) {
@@ -26,12 +28,10 @@ function renderTable (state) {
         });
     });
 
-    console.time("render html");
     var html = template(newState);
-    console.timeEnd("render html");
-    console.time("update dom");
     render(html, document.querySelector(".main-content"));
-    console.timeEnd("update dom");
+
+    console.log("time in ms: " + (Date.now() - start));
 }
 
 module.exports = {
