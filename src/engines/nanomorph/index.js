@@ -2,6 +2,7 @@
 
 var morph = require('nanomorph');
 var html = require('nanohtml');
+var utils = require("src/utils");
 
 var table;
 
@@ -45,7 +46,8 @@ module.exports = {
         var newTable = template(newState);
 
         morph(table, newTable);
-        console.log("time in ms: " + (Date.now() - start));
+
+        utils.log(start);
     }
 };
 

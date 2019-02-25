@@ -4,7 +4,7 @@ var morph = require('nanomorph');
 var html = require('nanohtml');
 var raw = require('nanohtml/raw');
 var template = require("./test.pug");
-
+var utils = require("src/utils");
 
 var table;
 
@@ -22,6 +22,6 @@ module.exports = {
         newTable = newTable[0];
         morph(table, newTable);
 
-        console.log("time in ms: " + (Date.now() - start));
+        utils.log(start);
     }
 };

@@ -5,9 +5,19 @@
         <title>render benchmark</title>
     </head>
     <body>
-        <div class="row">
-          <div class="sidebar"></div>
-          <div class="main-content"></div>
+
+        <div>
+            <select style="min-height: 30px;">
+                <<option></option>
+                <<option>lit-html</option>
+                <option>nanomorph</option>
+                <option>pug</option>
+                <option>pug-nanomorph</option>
+                <option>vanilla</option>
+            </select>
+            <span class="log"></span>
         </div>
+        <hr>
+        <div class="main-content"></div>
     </body>
 </html>

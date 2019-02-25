@@ -1,8 +1,7 @@
 'use strict';
 
-
 var {html, render} = require("lit-html");
-
+var utils = require("src/utils");
 
 var template = function (state) {
 
@@ -31,7 +30,7 @@ function renderTable (state) {
     var html = template(newState);
     render(html, document.querySelector(".main-content"));
 
-    console.log("time in ms: " + (Date.now() - start));
+    utils.log(start);
 }
 
 module.exports = {

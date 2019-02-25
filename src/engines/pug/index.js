@@ -1,7 +1,7 @@
 'use strict';
 
 var template = require("./test.pug");
-
+var utils = require("src/utils");
 
 function renderTable (state) {
     var start = Date.now();
@@ -10,7 +10,7 @@ function renderTable (state) {
 
     document.querySelector(".main-content").innerHTML = html;
 
-    console.log("time in ms: " + (Date.now() - start));
+    utils.log(start);
 }
 
 module.exports = {

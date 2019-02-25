@@ -1,5 +1,7 @@
 'use strict';
 
+var utils = require("src/utils");
+
 var template = function (state) {
 
     var html = "<table>";
@@ -34,7 +36,7 @@ function renderTable (state) {
 
     document.querySelector(".main-content").innerHTML = html;
 
-    console.log("time in ms: " + (Date.now() - start));
+    utils.log(start);
 }
 
 module.exports = {
