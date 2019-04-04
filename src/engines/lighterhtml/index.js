@@ -1,6 +1,7 @@
 'use strict';
 
-var {html, render} = require("lit-html");
+const {render, html} = require("lighterhtml");
+
 var utils = require("src/utils");
 
 var template = function (state) {
@@ -8,7 +9,7 @@ var template = function (state) {
     return html`<table>
                 ${state.data.map((tr) => html`
                     <tr>${tr.map((td) => html`
-                            <td>${td}</td>
+                            <td>${td.toString()}</td>
                         `)}
                     </tr>
                 `)}
@@ -28,7 +29,10 @@ function renderTable (state) {
     });
 
     var htmlContent = template(newState);
-    render(htmlContent, document.querySelector(".main-content"));
+
+    render(document.querySelector(".main-content"), function () {
+        return html`${htmlContent}`;
+    });
 
     utils.log(start);
 }
