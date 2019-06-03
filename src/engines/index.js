@@ -7,6 +7,6 @@ module.exports = {
     "nanomorph" : require("src/engines/nanomorph/"),
     "pug-nanomorph" : require("src/engines/pug-nanomorph/"),
     "lit-html" : require("src/engines/lit-html/"),
-    "vanilla" : require("src/engines/vanilla/"),
-    "true-vanilla" : require("src/engines/true-vanilla/")
+    "vanilla-string-concatenation" : require("src/engines/vanilla-string-concatenation/"),
+    "vanilla-dom-api" : require("src/engines/vanilla-dom-api/")
 };
