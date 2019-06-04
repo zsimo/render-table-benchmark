@@ -22,7 +22,7 @@ start webpack dev server
 ```bash
 npm run dev
 ```
-build assets in the public folder (it will be the source of the [demo](https://github.com/zsimo/render-table-benchmark) page)
+build assets in the public folder (it will be the source of the [demo](https://zsimo.github.io/render-table-benchmark/public/) page)
 ```bash
 npm run build
 ```
