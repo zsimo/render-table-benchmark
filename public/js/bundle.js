@@ -928,7 +928,7 @@ eval("\r\n\r\nvar state = {};\r\n\r\nmodule.exports = state;\n\n//# sourceURL=we
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n\nmodule.exports = {\n    log: function (start) {\n        var log = \"time in ms: \" + (Date.now() - start);\n        document.querySelector(\".log\").innerHTML = log;\n        console.log(log);\n    }\n};\n\n//# sourceURL=webpack:///./src/utils.js?");
+eval("\n\n\nmodule.exports = {\n    log: function (start) {\n        var log = \"Update one row, time in ms: \" + (Date.now() - start);\n        document.querySelector(\".log\").innerHTML = log;\n        console.log(log);\n    }\n};\n\n//# sourceURL=webpack:///./src/utils.js?");
 
 /***/ }),
 
