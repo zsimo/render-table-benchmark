@@ -5,7 +5,6 @@ node_modules/
 vendor/
 bin/
 logs/
-public/
 
 
 # FILES
