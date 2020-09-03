@@ -1,7 +1,7 @@
 "use strict";
 
 var path = require("path");
-var config = require('dotenv').config().parsed;
+var config = require('env-to-config')();
 var { URL } = require('url');
 var currentURL = new URL(config.APPLICATION_URL);
 
