@@ -8,5 +8,6 @@ module.exports = {
     "pug-nanomorph" : require("src/engines/pug-nanomorph/"),
     "lit-html" : require("src/engines/lit-html/"),
     "vanilla-string-concatenation" : require("src/engines/vanilla-string-concatenation/"),
-    "vanilla-dom-api" : require("src/engines/vanilla-dom-api/")
+    "vanilla-dom-api" : require("src/engines/vanilla-dom-api/"),
+    "svelte" : require("src/engines/svelte/")
 };

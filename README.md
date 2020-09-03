@@ -12,6 +12,7 @@ Template engines currently tested:
 - [nanomorph](https://github.com/choojs/nanomorph#readme)
 - [pug](https://pugjs.org/api/getting-started.html)
 - pug + nanomorph + [nanohtml](https://github.com/choojs/nanohtml#readme)
+- [svelte](https://svelte.dev/)
 
 Vanilla implementation currently tested:
 - string concatenation
@@ -41,6 +42,7 @@ The benchmark is very simple: render a table with 500 rows and 5 columns and the
 | pug + nanomorph | ~ 300     |  yes |
 | vanilla-string-concatenation | ~ 50    | no |
 | vanilla-dom api | ~ 5   | no |
+| svelte | ~ 0   | no |
 
 
 ## License
